@@ -1,0 +1,577 @@
+.nav-link:hover {
+  font-size: 125%;
+  color: white;
+} 
+
+.nav-link {
+  color: rgb(107, 107, 107);
+} 
+
+.nav-link:hover .fa {
+  transition: all 1s;
+  transform: rotate(360deg);
+  font-size: 20px;
+}
+
+.color-izq  {
+  background-color: rgb(92, 0, 0) !important
+}
+
+
+hr{
+  color: white;
+}
+
+
+body {
+
+
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  
+  background-repeat: repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+  background-color: #eeeeee;
+  font-family: 'Open Sans', serif
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgba(255, 255, 255, 0.918);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 153, 0, 0.938);
+  border-radius: 0.10rem
+}
+
+.card-header:first-child {
+  border-radius: calc(0.37rem - 1px) calc(0.37rem - 1px) 0 0
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 206, 17, 0.274);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.63)
+}
+
+.track {
+  position: relative;
+  background-color: rgba(221, 221, 221, 0.685);
+  height: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+  margin-top: 50px
+}
+
+.track .step {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 25%;
+  margin-top: -18px;
+  text-align: center;
+  position: relative
+}
+
+.track .step.active:before {
+  background: #FF5722
+}
+
+.track .step::before {
+  height: 7px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  top: 18px
+}
+
+.track .step.active .icon {
+  background: #ee5435;
+  color: #fff
+}
+
+.track .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  border-radius: 100%;
+  background: rgb(117, 117, 117)
+}
+
+.track .step.active .text {
+  font-weight: 400;
+  color: rgb(255, 255, 255)
+}
+
+.track .text {
+  display: block;
+  margin-top: 7px
+}
+
+.itemside {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%
+}
+
+.itemside .aside {
+  position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0
+}
+
+.img-sm {
+  width: 80px;
+  height: 80px;
+  padding: 7px
+}
+
+ul.row,
+ul.row-sm {
+  list-style: none;
+  padding: 0
+}
+
+.itemside .info {
+  padding-left: 15px;
+  padding-right: 7px
+}
+
+.itemside .title {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem
+}
+
+.btn-warning {
+  color: #ffffff;
+  background-color: #ee5435;
+  border-color: #ee5435;
+  border-radius: 1px
+}
+
+.btn-warning:hover {
+  color: #ffffff;
+  background-color: #ff2b00;
+  border-color: #ff2b00;
+  border-radius: 1px
+}
+
+/* Suscripcion */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+.widget_blog_subscription {
+display: block;
+margin: 50px auto;
+width: 60%;
+max-width: 490px;
+min-width: 320px;
+position: relative;
+overflow: hidden;
+background-color: #F6F6F2;
+border-radius: 5px;
+padding: 50px;
+background-color: #fff;
+background-size: 100% 1em;
+background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.05) 79px, #abced4 79px, #abced4 81px, rgba(0, 0, 0, 0.03) 81px),
+                -webkit-linear-gradient(#eee .05em, transparent .05em);
+background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.05) 79px, #abced4 79px, #abced4 81px, rgba(0, 0, 0, 0.03) 81px),
+                -moz-linear-gradient(#eee .05em, transparent .05em);
+background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 79px, #83B3DB 79px, #83B3DB 81px, rgba(0, 0, 0, 0.03) 81px),
+                linear-gradient(#eee .05em, transparent .05em);
+}
+.widget_blog_subscription p {
+margin: 30;
+text-align: center;
+}
+.widget_blog_subscription p:first-child {
+margin: 0 0 50px;
+color: #000000;
+text-transform: uppercase;
+text-align: center;
+font-size: 25px;
+letter-spacing: 5px;
+}
+.widget_blog_subscription p:nth-child(2) {
+width: 65%;
+float: left;
+}
+.widget_blog_subscription p:nth-child(3) {
+width: 35%;
+float: left;
+}
+.widget_blog_subscription input[type="text"] {
+margin: 0;
+color: #999;
+padding: 15px !important;
+text-align: left;
+width: 100% !important;
+outline: none;
+border: 10;
+font-size: 14px;
+background-color: #fff;
+}
+.widget_blog_subscription input[type="text"]::-webkit-input-placeholder {
+color: #d0d0d0;
+}
+.widget_blog_subscription input[type="text"]:-moz-placeholder {
+color: #d0d0d0;
+}
+.widget_blog_subscription input[type="text"]::-moz-placeholder {
+color: #d0d0d0;
+}
+.widget_blog_subscription input[type="text"]:-ms-input-placeholder {
+color: #d0d0d0;
+}
+.widget_blog_subscription input[type="submit"] {
+margin: 0;
+background-color: #83B3DB;
+color: #fff;
+padding: 16px !important;
+text-align: center;
+width: 100%;
+outline: none;
+border: 10;
+text-transform: uppercase;
+font-size: 13px;
+cursor: pointer;
+-webkit-transition: .1s all ease-in-out;
+-moz-transition: .1s all ease-in-out;
+-o-transition: .1s all ease-in-out;
+transition: .1s all ease-in-out;
+}
+.widget_blog_subscription input[type="submit"]:hover {
+background-color: #F29B91;
+box-shadow: 0px 0px 0px 5px #F29B91;
+}
+
+/* Carrito */
+.title {
+  margin-bottom: 5vh
+}
+
+.card {
+  margin: auto;
+  max-width: 950px;
+  width: 90%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  border: transparent
+}
+
+@media(max-width:767px) {
+  .card {
+      margin: 3vh auto
+  }
+}
+
+.cart {
+  background-color: #fff;
+  padding: 4vh 5vh;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem
+}
+
+@media(max-width:767px) {
+  .cart {
+      padding: 4vh;
+      border-bottom-left-radius: unset;
+      border-top-right-radius: 1rem
+  }
+}
+
+.summary {
+  background-color: #ddd;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 4vh;
+  color: rgb(65, 65, 65)
+}
+
+@media(max-width:767px) {
+  .summary {
+      border-top-right-radius: unset;
+      border-bottom-left-radius: 1rem
+  }
+}
+
+.summary .col-2 {
+  padding: 0
+}
+
+.summary .col-10 {
+  padding: 0
+}
+
+.row {
+  margin: 0
+}
+
+.title b {
+  font-size: 1.5rem
+}
+
+.main {
+  margin: 0;
+  padding: 2vh 0;
+  width: 100%
+}
+
+.col-2,
+.col {
+  padding: 0 1vh
+}
+
+a {
+  padding: 0 1vh
+}
+
+.close {
+  margin-left: auto;
+  font-size: 0.7rem
+}
+
+.back-to-shop {
+  margin-top: 4.5rem
+}
+
+h5 {
+  margin-top: 4vh
+}
+
+hr {
+  margin-top: 1.25rem
+}
+
+form {
+  padding: 2vh 0
+}
+
+select {
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1.5vh 1vh;
+  margin-bottom: 4vh;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247)
+}
+
+input {
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1vh;
+  margin-bottom: 4vh;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247)
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+.btn {
+  background-color: #000;
+  border-color: #000;
+  color: white;
+  width: 100%;
+  font-size: 0.7rem;
+  margin-top: 4vh;
+  padding: 1vh;
+  border-radius: 9
+}
+
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+  box-shadow: none;
+  color: white;
+  -webkit-box-shadow: none;
+  -webkit-user-select: none;
+  transition: none
+}
+
+.btn:hover {
+  color: white
+}
+
+a {
+  color: black
+}
+
+a:hover {
+  color: black;
+  text-decoration: none
+}
+
+#code {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center
+}
+
+/* stock */
+
+h5{
+  color: #b3b3b3
+}
+
+body {
+  background-color: #B3E5FC;
+  border-radius: 10px
+}
+
+.card {
+  border: none;
+  border-radius: 0px;
+  background-color: rgba(24, 24, 24, 0.979)
+}
+
+.text1 {
+  font-size: 13px;
+  color: #ffffff
+}
+
+.info {
+  line-height: 17px
+}
+
+.cost span {
+  color: #fb3531;
+  font-weight: bold;
+  font-size: 20px
+}
+
+.star {
+  color: #FBC02D
+}
+
+.watchcost span {
+  color: #286783;
+  font-weight: bold;
+  font-size: 20px
+}
+
+.watch {
+  background: #286783
+}
+
+.tshirtcost span {
+  color: #0012b2;
+  font-weight: bold;
+  font-size: 20px
+}
+
+.tshirt {
+  background-color: #0012b2
+}
+
+.cursor {
+  cursor: pointer
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: max-content;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+

@@ -1,0 +1,64 @@
+{% extends 'app/base_loged.html' %}
+{% load static %} 
+{% load crispy_forms_tags %}
+{% block title %}
+      <title>Lista De Productos</title>
+{% endblock %}
+
+{% block contenido %}
+
+
+<div class="container-fluid" style="background-color: rgba(0, 255, 13, 0.521); overflow: auto;">
+    <div class="row">
+    <div class="col-12">
+    <table class="table table-condensed table-bordered table-responsive-sm text-white" style="text-align: center;">
+        <thead>  
+            <tr>
+                <th>CODIGO</th>
+                <th>NOMBRE</th>
+                <th>MARCA</th>
+                <th>PRECIO</th>
+                <th>STOCK</th>
+                <th>DESCRIPCION</th>
+                <th>TIPO</th>
+                <th>IMAGEN</th>
+                <th>FECHA INGRESO</th>
+                <th>OPCIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+         {% for aux in listaProductos %}
+             <tr>
+                 <td>{{ aux.codigo }}</td>
+                 <td>{{ aux.nombre }}</td>
+                 <td>{{ aux.marca }}</td>
+                 <td>{{ aux.precio }}</td>
+                 <td>{{ aux.stock }}</td>
+                 <td>{{ aux.descripcion }}</td>
+                 <td>{{ aux.tipo }}</td>
+                 <td>{% if aux.imagen %}
+                    <img src="{{ aux.imagen.url }}" class="rounded img-fluid" style="max-height: 200px; max-width: 45%;" alt="No encontrada">
+                    {% else %}
+                    <img src="{% static 'app/img/defecto.png' %}" class="rounded img-fluid item-img w-100 mb-3">
+                    {% endif %}</td>
+                 <td>{{ aux.fecha_ingreso }}</td>
+                 <td>
+                    {% if perms.app.change_producto %}
+                        <a href="{% url 'modificar_producto' aux.codigo %}" class="btn btn-success">Modificar</a>
+                    {% endif %}
+
+                    {% if perms.app.delete_producto %} 
+                        <a onclick="confirmDelete({{ aux.codigo }})" class="btn btn-danger">Eliminar</a>
+                    {% endif %}
+                 </td>
+             </tr>
+         {% endfor %}
+        </tbody>
+    </table>    
+</div>
+</div>
+</div>
+
+{{ mensaje }}
+
+{% endblock %}

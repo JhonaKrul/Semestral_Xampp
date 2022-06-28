@@ -1,0 +1,54 @@
+{% extends 'app/base.html' %}
+{% load static %} 
+
+{% block title %}
+      <title>Editar perfil</title>
+{% endblock %}
+
+{% block contenido %}
+<div class="col-sm-10" style="margin-top: 1%">
+  <div class="containerperfil rounded mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-3 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" src="https://es.babelio.com/users/AVT_Eiichiro-Oda_7103.jpg"><span class="font-weight-bold">oda eiichiro</span><span class="text-black-50">oda_eiichiro_god@gmail.com</span><span> </span></div>
+        </div>
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Propiedades Perfil</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><label class="labels">Nombre</label><input type="text" class="form-control" placeholder="primer nombre" value=""></div>
+                    <div class="col-md-6"><label class="labels">Apellido</label><input type="text" class="form-control" value="" placeholder="Apellido"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Telefono</label><input type="text" class="form-control" placeholder="enter Telefono" value=""></div>
+                    <div class="col-md-12"><label class="labels">Direccion</label><input type="text" class="form-control" placeholder="enter Direccion" value=""></div>
+                    <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="enter email id" value=""></div>
+                    <div class="col-md-12"><label class="labels">Educacion</label><input type="text" class="form-control" placeholder="Educacion" value=""></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6"><label class="labels">Pais</label><input type="text" class="form-control" placeholder="Pais" value=""></div>
+                    <div class="col-md-6"><label class="labels">Ciudad</label><input type="text" class="form-control" value="" placeholder="Ciudad"></div>
+                </div>
+                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Guardar Datos</button></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center experience"><span>Editar Trabajo/Experiencia</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
+                <div class="col-md-12"><label class="labels">Editar</label><input type="text" class="form-control" placeholder="Mangaka" value=""></div> <br>
+                <div class="col-md-12"><label class="labels">Detalles Adicional</label><input type="text" class="form-control" placeholder="Todo Un Troll" value=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    
+</div>
+</div>
+</div>
+{% endblock %}

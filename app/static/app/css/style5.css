@@ -1,0 +1,213 @@
+
+  h1, h2{
+    font-family: 'Fascinate', cursive;
+  }
+  .accordion{
+    max-width: 990px;
+    background: rgba(0,0,0,0.10);
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.47);
+    flex-direction: row;
+    cursor: pointer;
+    margin-bottom: 100px;
+  }
+  
+  .box{
+    position: relative;
+    height: 100%;
+    flex: 1;
+    background-position: left;
+    background-size: cover;
+    transition: .7s;
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.47);
+  }
+  
+  .box:hover{
+    flex: 7;
+    height: 400px;
+  } 
+  
+  /* Background images */
+  .a1{
+    background-image: url("http://viverokantu.pe/web/wp-content/uploads/2018/04/servicio-de-jardineria02.jpg");
+  }
+  .a2{
+    background-image: url("https://www.fundacionmaude.com/wp-content/uploads/2017/08/prl_jardineria-1024x682.jpg");
+  }
+  .a3{
+    background-image: url("http://www.belterrachile.cl/wp-content/uploads/2019/07/Jardineria.jpg");
+  }
+  .a4{
+    background-image: url("https://conceptodefinicion.de/wp-content/uploads/2015/05/jardineria-.jpg");
+  }
+  .a5{
+    background-image: url("https://cdn.shopify.com/s/files/1/0044/1443/9535/products/9047_IU-049_HR_project_main_image_1024x1024.jpg?v=1569213741");
+  }
+  /* End Background images */
+  
+  p{
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .text{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    padding: 10px;
+  }
+  
+  .box:hover .text{
+    opacity: 1;
+  }
+  
+  h1{
+    width: 300px;
+    text-align: center;
+    margin: 100px auto 20px auto;
+  }
+  
+  @media screen and (max-width: 800px){
+    body{
+      margin: 0px;
+    }
+    .accordion{
+      flex-direction: column;
+      height: 700px;
+      box-shadow: none;
+    }
+    .box{
+      box-shadow: none;
+      background-position: center;
+    }
+    .box:hover{
+      flex: 7;
+    }
+  }
+
+  /* Carrito */
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif
+  }
+  
+  
+  
+  .pic {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+  }
+  
+  .table thead {
+      background-color: #21cf95;
+  }
+  
+  .table thead th {
+      padding: 30px;
+      font-size: 14px;
+      color: white;
+  }
+  
+  .table tbody td input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      background-color: #eee;
+      position: relative;
+      border-radius: 3px;
+      cursor: pointer;
+  }
+  
+  .container .table-wrap {
+  
+      margin: 20px auto;
+      overflow-x: auto
+  }
+  
+  .container .table-wrap::-webkit-scrollbar {
+      height: 5px;
+  }
+  
+  .container .table-wrap::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-image: linear-gradient(to right, #5D7ECD, #0C91E6);
+  }
+  
+  .table>:not(caption)>*>* {
+      padding: 2rem 0.5rem;
+  }
+  
+  .input {
+      width: 30px;
+      height: 30px;
+      color: black;
+      font-weight: 600;
+      outline: none;
+      padding: 8px;
+  }
+  
+  ::placeholder {
+      color: black;
+      font-weight: 600;
+  }
+  
+  .table tbody td input[type="checkbox"]:after {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      content: "\f00c";
+      color: #fff;
+      font-size: 15px;
+      display: none
+  }
+  
+  .table tbody td input[type="checkbox"]:checked,
+  .table tbody td input[type="checkbox"]:checked:hover {
+      background-color: #21cf95;
+  }
+  
+  .table tbody td input[type="checkbox"]:checked::after {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .table tbody td input[type="checkbox"]:hover {
+      background-color: #ddd;
+  }
+  
+  .table tbody td {
+      padding: 30px;
+      margin: 0;
+      font-size: 14.5px;
+      font-weight: 600;
+  }
+  
+  .table tbody td .fa-times {
+      color: #D32F2F;
+  }
+  
+  
+  .text-muted {
+      font-size: 12.5px;
+  }
+  
+  .table tbody tr td:nth-of-type(3) {
+      min-width: 320px;
+  }
+  
+  @media(min-width: 992px) {
+      .container .table-wrap {
+          overflow: hidden;
+      }
+  }

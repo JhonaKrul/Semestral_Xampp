@@ -1,0 +1,41 @@
+{% extends 'app/base_loged.html' %}
+{% load static %} 
+
+{% block title %}
+      <title>Pagina</title>
+{% endblock %}
+
+{% block contenido %}
+
+<div class="pick_today" >
+  <div class="row">
+    {% for aux in listaZelda %}
+    <div class="col-5 col-md-3 mb-1">
+      <div class="card mt-3">
+            <h5>{{ aux.name }}</h5>
+            <div class="mt-3 text-white info"> <span class="text-white d-block" style="color:white"></span> {{ aux.developer }} {{ aux.publisher }} <span class="text1"></span> </div>
+            <div class=" cost mt-3"> <span>{{ aux.released_date }}</span>
+              <div class="mt-3 text-white info"> <span class="text-white d-block" style="color:white"></span> {{ aux.description }} <span class="text1"></span> </div>
+                <div class=" star mt-3 align-items-center"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                <form action="" method="GET">
+
+                  <input type="hidden" name="nombre_producto" id="nombre_producto" value="{{ aux.nombre }}">
+                  <input type="hidden" name="precio_producto" id="precio_producto" value="{{ aux.precio }}">
+                  <input type="hidden" name="imagen_producto" id="imagen_producto" value="{{ aux.imagen }}">
+                  <input type="submit" style="cursor: pointer;" value="Carrito"  class="btn btn-success btn-sm">
+                </form>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul id="contenido-producto">
+
+      </ul>
+      <ul id="contenido-producto">
+        
+      </ul>  
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

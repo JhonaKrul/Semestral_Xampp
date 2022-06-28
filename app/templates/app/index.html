@@ -1,0 +1,148 @@
+{% extends 'app/base.html' %}
+{% load static %} 
+
+{% block title %}
+      <title>Inicio</title>
+{% endblock %}
+
+{% block contenido %}
+
+
+
+
+<div class="container-fluid" style="text-align: center; margin-top: 10px;">
+  <div class="row">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" >
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <img src="{% static 'app/img/muestra2.jpg' %}" alt="Muestras" class="d-block" style="width: 100%; max-height: 200px;">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'app/img/palas2.jpg' %}" alt="Palas" class="d-block" style="width: 100%; max-height: 200px;">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'app/img/ferti2.jpg' %}" alt="Fertilizante" class="d-block" style="width: 100%; max-height: 200px;">
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid"> 
+  <div style="color: greenyellow;font-size: 25px; background-color: hsl(120, 48%, 20%); margin: 1%; text-align: center; padding-bottom: 5px; margin-left: 3%; margin-right: 3%;">
+    <p style="font-size: 55px">¡Bienvenido a limpieza y jardinería!</p> 
+    <hr>
+    <p style="">Acá encontrarás todos los productos necesarios para dedicarte al cuidado de diferentes vegetales, ya sea con intenciones estéticas o alimenticias con enormes descuentos.
+      <p style=""> Recomendamos revisar la sección de destacados para mayores referencias</p> 
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row" style="margin-left: 5%; margin-right:5%;">
+  <div class="col-sm-3" style="background-color:  hsl(120, 48%, 20%); text-align: center; margin-bottom: 2%; overflow: auto;">
+    <img src="https://encolombia.com/wp-content/uploads/2019/05/plantas-medicinales-antiobioticos.jpg" alt="" width=90% style=" margin: 3%;">
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 10px;"> Antibioticos Naturales </p>
+
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 30px;">
+      El uso de plantas medicinales como tratamiento alternativo es una práctica que ha aumentado significativamente en los últimos años.
+      En nuestro país se suele recurrir a la fitoterapia para tratar síntomas leves o pasajeros, o como tratamiento preventivo.
+      el uso de plantas medicinales en dolencias crónicas y de mayor importancia, como la diabetes, la hipertensión 
+      e incluso el cáncer.
+    </p> 
+  </div>
+  <div class="col-sm-3" style="background-color: hsl(120, 48%, 20%); text-align: center; margin-bottom: 2%;">
+    <img src="https://th.bing.com/th/id/OIP.PfUf-iL0B0LckjGSWQ_YrQHaIw?pid=ImgDet&rs=1" alt="" width=57% style=" margin: 3%;">
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 5px;"> Cohosh negro </p>
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 30px; overflow: auto;">
+      Es una alternativa natural a los medicamentos hormonales que disminuyen los síntomas de la menopausia, como los sofocos, 
+      los sudores nocturnos, los cambios de humor, la sequedad vaginal y las palpitaciones. El cohosh negro también ayuda a aliviar 
+      el dolor relacionado con el síndrome premenstrual.
+    </p> 
+  </div>
+  <div class="col-sm-3" style="background-color: hsl(120, 48%, 20%); text-align: center; margin-bottom: 2%;">
+    <img src="https://th.bing.com/th/id/OIP.K3nAHqfCJ5sD2zv_FI1WggHaDe?pid=ImgDet&rs=1" alt="" width=145% style=" margin: 3%;">
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 5px;"> Ñame silvestre </p>
+
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 30px; overflow: auto;">
+      Equilibra las hormonas y alivia las náuseas matutinas. Además, se cree que el ñame silvestre mejora la fertilidad femenina.
+      Sin embargo, según la Sociedad Estadounidense del Cáncer, el ñame silvestre por sí solo no produce progesterona en el cuerpo y,
+      por lo tanto, no tiene ningún efecto sobre la fertilidad.
+    </p> 
+  </div>
+  <div class="col-sm-3" style="background-color: hsl(120, 48%, 20%); text-align: center; margin-bottom: 2%;">
+    <img src="https://encolombia.com/wp-content/uploads/2019/05/plantas-medicinales-antiobioticos.jpg" alt="" width=90% style=" margin: 3%;">
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 10px;"> Cola de león </p>
+
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 30px; overflow: auto;">
+      La cola de león se suele utilizar para remediar la ansiedad y el insomnio, ya que actúa como calmante. De la misma manera,
+       es un buen antiarrítmico y mitiga las taquicardias y las palpitaciones. También se utiliza para las alteraciones del ritmo 
+       cardíaco de origen nervioso y como coadyuvante en hipertiroidismo.
+    </p> 
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="row" style="margin-left: 5%; margin-right:5%;">
+  <div class="col-sm-3" style="background-color: hsl(120, 48%, 20%); text-align: center; margin-bottom: 2%; height: 400px; overflow: auto;">
+    <img src="https://th.bing.com/th/id/R.46fc7f46e319fef1acdb8ead8dfb0476?rik=iZ%2f3BRsvbSRExg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-UTPeoc4Uc8w%2fTzqSgZsJC7I%2fAAAAAAAAABU%2ftyq09PLPKXU%2fs1600%2ffundo_horticultura.jpg&ehk=aiQYfuEH5yBsiJi9CGVZ6UE5qPvJDPYKSNdKvmTTtXE%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="" width=90% style=" margin: 3%;">
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 30px;">
+      La horticultura es la ciencia encargada del cultivo de plantas. El término viene del latín hortus (huerto) y cultura (cultivo). 
+      también es la industria de los cultivos y, específicamente, también se usa el término para el cultivo de hortalizas.
+       Esta rama de la agricultura se preocupa fundamentalmente de la producción de plantas utilizadas por el hombre, para alimentación, ornamentación y también para fines medicinales.
+    </p> 
+  </div>
+  <div class="col-sm-3" style="background-color: hsl(120, 48%, 20%); text-align: center; margin-bottom: 2%;height: 400px; overflow: auto;">
+    <img src="https://th.bing.com/th/id/OIP.nGrJz0FLieGQBuzWvm__KgHaE7?pid=ImgDet&rs=1" alt="" width=95% style=" margin: 3%;">
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 30px;">
+      La floricultura es la disciplina de la horticultura orientada al cultivo de flores y plantas ornamentales en forma industrializada para uso decorativo.
+      Los productores llamados floricultores, producen plantas para jardín, para su uso por jardineros, paisajistas, decoradores de interiores, venta de flores cortadas en floristerias o florerías,
+      para su uso final en florero. Hay que entender a la floricultura como emprendimientos de producción masiva de plantas por diferencia con la jardinería.
+    </p> 
+  </div>
+  <div class="col-sm-3" style="background-color: hsl(120, 48%, 20%); text-align: center; margin-bottom: 2%;height: 400px; overflow: auto;">
+    <img src="https://2.bp.blogspot.com/-wEQOiU4DyqI/WMPyw0ZcZQI/AAAAAAAAAvE/GWTIRYStd4YJkZ8LFnprWbqw4hwMFc4XgCLcB/s1600/pala%2Bjardineria%2B2.jpg" alt="" width=95% style=" margin: 3%;">
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 30px;">
+      La jardinería se divide en horticultura, que es el cultivo de legumbres; la arboricultura, que es cultivo de árboles de frutos; la floricultura, que refiere al cultivo de flores y el cuidado de viveros, 
+      donde se cultivan árboles y pequeños arbustos.
+    </p> 
+  </div>
+  <div class="col-sm-3" style="background-color: hsl(120, 48%, 20%); text-align: center; margin-bottom: 2%;height: 400px; overflow: auto;">
+    <img src="https://th.bing.com/th/id/R.6ed2ac99b1130a15b21d3a8db9bc6c32?rik=s5SlNNaiZF57gg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-05q2rVzNAZo%2fUTEojgXQ4lI%2fAAAAAAAAFbQ%2f3OP57sYckrI%2fs1600%2fjardin%2bbotanico.jpg&ehk=vDNUiBD5Vor4r2OOhDtlBi7q%2bo86xJVLzEoeFfPhFak%3d&risl=&pid=ImgRaw&r=0" alt="" width=90% style=" margin: 3%;">
+    <p style="color: greenyellow;font-size: 18px; background-color: hsl(120, 48%, 20%); padding: 30px;">
+     El Jardín Botánico de Santo Domingo Es un área extensa y protegida, constituye uno de los lugares más puros y libres de contaminación de la ciudad.
+      Fundado el 15 de agosto de 1976 como fuente recreativa y educativa ha recibido innumerables visitantes que han sido testigos de la magia naturaleza.
+    </p> 
+  </div>
+</div>
+
+{% endblock %} 

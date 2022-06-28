@@ -1,0 +1,45 @@
+{% extends 'app/base.html' %}
+{% load static %} 
+
+{% block title %}
+      <title>Perfil</title>
+{% endblock %}
+
+{% block contenido %}
+<div class="col-sm-10" style="margin-top: 1%">
+  <div class="container">
+    <div class="card">
+        <div class="form">
+            <div class="left-side">
+                <div class="top-div">
+
+                    <p>Perfil</p>
+                    <p></p>
+                    <p>Contacto</p>
+                </div>
+                <div class="medium-div">
+                    <h1 class="text-white" >Eiichiro </h1>
+                    <h1 class="text-white">Oda</h1>
+                    <p class="text-white">nacido el 1 de enero de 1975 en la prefectura de Kumamoto,conocido por ser el creador del manga One Piece.</p>
+                    <p class="text-white">Link De su Obra :<a class="text-black activo" href="https://one-piece.com/">One Piece Oficial</a ></p>
+                    <p class="text-white">Mangaka japonés</p>
+                </div>
+                <div class="icons"> <button>Redes</button> <i class="fa fa-instagram"> </i><i class="fa fa-twitter"></i> </div>
+                <div class="last-div">
+                    <div class="hexa"> <span class="hexagonal"> <small></small> <small></small> <small></small> </span>
+                        <p>One Piece</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="right-side"> <img src="{% static 'app/img/oda.jpg' %}"> </div>
+        </div>
+    </div>
+</div>
+    
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %} 

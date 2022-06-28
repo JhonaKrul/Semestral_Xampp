@@ -1,0 +1,70 @@
+{% extends 'app/base.html' %}
+{% load static %} 
+
+{% block title %}
+      <title>Seguimiento</title>
+{% endblock %}
+
+{% block contenido %}
+<div class="col-sm-10">
+  <div class="container p-3 my-3  text-white">
+      <center><h1 style="outline: auto; color: white; font-weight: 500; font-family: Arial, Helvetica, sans-serif;">Seguimiento Del Producto</h1></center>
+      <div class="container">
+          <article class="card">
+              <header class="card-header"> Mi Orden / Trayecto </header>
+              <div class="card-body">
+                  <h6>ID Orden: OD45345345435</h6>
+                  <article class="card">
+                      <div class="card-body row">
+                          <div class="col"> <strong>Fecha Estimada:</strong> <br>04 Abril 2022 </div>
+                          <div class="col"> <strong>Enviado Por:</strong> <br> BLUE EXPRESS  <i class="fa fa-phone">+569 7942 8853</i>  </div>
+                          <div class="col"> <strong>Status:</strong> <br> Recogido por el Mensajero </div>
+                          <div class="col"> <strong>Seguimiento #:</strong> <br> BD045903594059 </div>
+                      </div>
+                  </article>
+                  <div class="track">
+                      <div class="step active"> <span class="icon"> <i class="fa fa-check"></i> </span> <span class="text">Orden Confirmado</span> </div>
+                      <div class="step active"> <span class="icon"> <i class="fa fa-user"></i> </span> <span class="text"> Recogio Por El Mensajero</span> </div>
+                      <div class="step"> <span class="icon"> <i class="fa fa-truck"></i> </span> <span class="text"> En camino.... </span> </div>
+                      <div class="step"> <span class="icon"> <i class="fa fa-box"></i> </span> <span class="text">Entregado</span> </div>
+                  </div>
+                  <hr>
+                  <ul class="row">
+                      <li class="col-md-4">
+                          <figure class="itemside mb-3 p-5">
+                              <div class="aside"><img src="img/planta.png" class="img-sm border"></div>
+                              <figcaption class="info align-self-center">
+                                  <p class="title">Planta <br> Hermosa!</p> <span class="text-muted">$2000 </span>
+                              </figcaption>
+                          </figure>
+                      </li>
+                      <li class="col-md-4">
+                          <figure class="itemside mb-3 p-5">
+                              <div class="aside"><img src="img/macetero.png" class="img-sm border"></div>
+                              <figcaption class="info align-self-center">
+                                  <p class="title">Macetero entero bkn <br> entero weno</p> <span class="text-muted">$850 </span>
+                              </figcaption>
+                          </figure>
+                      </li>
+                      <li class="col-md-4">
+                          <figure class="itemside mb-3 p-5">
+                              <div class="aside"><img src="img/palita.png" class="img-sm border"></div>
+                              <figcaption class="info align-self-center">
+                                  <p class="title">Pala jardin del poder <br> LEGENDARIO </p> <span class="text-muted">$2500 </span>
+                              </figcaption>
+                          </figure>
+                      </li>
+                  </ul>
+                  <hr> <a href="index_loged.html" class="btn btn-warning" data-abc="true"> <i class="fa fa-chevron-left"></i> Back </a>
+              </div>
+          </article>
+      </div>
+  </div>
+  
+</div>
+</div>
+</div>
+
+
+      </div>
+{% endblock %}
