@@ -5,28 +5,89 @@
       <title>Pagina</title>
 {% endblock %}
 
-{% block contenido %}
 
-<div class="pick_today" >
+
+{% block contenido %}
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Fascinate|Nunito&display=swap" rel="stylesheet">
+</head>
+
+<h1 style="text-shadow: 3px 3px 3px black; color:blanchedalmond  " >Nuestros Productos</h1 >
+
+<div class="accordion" style="text-shadow: 2px 2px 2px black; ">
+  
+  <div class="box a1">
+    <div class="image_1">
+      <div class="text">
+        <h2 style="text-shadow: 2px 2px 2px black; ">Tijera de podar  UltraBlade®</h2>
+        <p style="text-shadow: 2px 2px 2px black; ">La tijera de podar UltraBlade® es un diseño de acero completo que es ideal para cortar tallos y ramas ligeras.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="box a2">
+    <div class="image_2">
+      <div class="text">
+        <h2 style="text-shadow: 2px 2px 2px black; ">CortaCerco hsa 45®</h2>
+        <p style="text-shadow: 2px 2px 2px black; "> Este equipo cuenta con una doble cuchilla de afilado con diamante y protección en la punta que le garantiza mayor durabilidad de la herramienta de corte.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="box a3">
+    <div class="image_3">
+      <div class="text">
+        <h2 style="text-shadow: 2px 2px 2px black; ">Planter Box®</h2>
+        <p>son un tipo especial de decoración de modo normal vendidos por la dríada. Su funcionamiento es similar al del recipiente de barro pero con la diferencia de que no necesitan un bloque para ser colocados y que funcionan como plataformas.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box a4">
+    <div class="image_4">
+      <div class="text">
+        <h2>Plantas y Semillas</h2>
+        <p>Las semillas es, a grandes rasgos, la estructura que forma una planta después de haberse reproducido y que utiliza para la propagación, liberándola al medio con la esperanza de que llegue a un hábitat donde las condiciones de luz, humedad y temperatura sean óptimas,</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="box a5">
+    <div class="image_5">
+      <div class="text">
+        <h2 style="text-shadow: 2px 2px 2px black; ">Sierra de poda plegable hoja de 25 cm Power Tooth®</h2>
+        <p style="text-shadow: 2px 2px 2px black; ">El propósito de la sierra de poda plegable con tecnología Power Tooth es ayudar a derribar ramas extra gruesas</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
   <div class="row">
-    {% for aux in listaZelda %}
+    
+    {% for aux in listaRM %}
     <div class="col-5 col-md-3 mb-1">
       <div class="card mt-3">
-            <h5>{{ aux.name }}</h5>
-            <div class="mt-3 text-white info"> <span class="text-white d-block" style="color:white"></span> {{ aux.developer }} {{ aux.publisher }} <span class="text1"></span> </div>
-            <div class=" cost mt-3"> <span>{{ aux.released_date }}</span>
-              <div class="mt-3 text-white info"> <span class="text-white d-block" style="color:white"></span> {{ aux.description }} <span class="text1"></span> </div>
-                <div class=" star mt-3 align-items-center"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                <form action="" method="GET">
+        {% if aux.imagen %}
+          <img src="{{ aux.imagen }}" class="img-fluid item-img w-100 mb-3">
+        {% else %}
+          <img src="{% static 'app/img/defecto.png' %}" class="img-fluid item-img w-100 mb-3">
+        {% endif %}
+            <h5>{{ aux.nombre }}</h5>
+            <div class="mt-3 info"> <span class="text1 d-block" style="color:white"></span> {{ aux.marca }} <span class="text1"></span> </div>
+            <div class=" cost mt-3 text-dark"> <span>$</span><span>{{ aux.precio }}</span>
+              <div class="mt-3 info"> <span class="text-white" style="color:white"></span> {{ aux.descripcion }} <span class="text1"></span> </div>
+                <div class="mt-3"> <span class="text-white" style="color:white"></span> Stock: {{ aux.stock }} <span class="text1"></span> </div>
+                  <div class=" star mt-3 align-items-center"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                  <form action="" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="nombre_producto" id="nombre_producto" value="{{ aux.nombre }}">
+                    <input type="hidden" name="precio_producto" id="precio_producto" value="{{ aux.precio }}">
+                    <input type="hidden" name="imagen_producto" id="imagen_producto" value="{{ aux.imagen }}">
+                    <input type="submit" style="cursor: pointer;" value="Carrito"  class="btn btn-success btn-sm">
+                  </form>  
 
-                  <input type="hidden" name="nombre_producto" id="nombre_producto" value="{{ aux.nombre }}">
-                  <input type="hidden" name="precio_producto" id="precio_producto" value="{{ aux.precio }}">
-                  <input type="hidden" name="imagen_producto" id="imagen_producto" value="{{ aux.imagen }}">
-                  <input type="submit" style="cursor: pointer;" value="Carrito"  class="btn btn-success btn-sm">
-                </form>  
-            </div>
           </div>
-        </div>
       </div>
       <ul id="contenido-producto">
 
@@ -35,7 +96,7 @@
         
       </ul>  
     </div>
+
     {% endfor %}
   </div>
-</div>
 {% endblock %}
